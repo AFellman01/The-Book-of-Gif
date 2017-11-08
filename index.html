@@ -1,19 +1,35 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Book of Everything</title>
-        <link rel="stylesheet" href="assets/css/custom.css">
-        <link rel="stylesheet" href="assets/css/reset.css">
-    </head>
+<!DOCTYPE html>
+<html>
 
+
+<head>
+  <!--
+  Add buttons via array in HTML
+  Get those buttons to query Giphy
+  Add gifs to page, along with proper rating
+  Add functionality which starts buttons paused, giving user ability to unpause
+  Add functionailty to add more buttons to array via a submit button
+  -->
+  <meta charset="utf-8">
+  <title>Giphy homerk, yo</title>
+  <link rel="stylesheet" href="assets\css\custom.css">
+    <link rel="stylesheet" href="assets\css\reset.css">
+</head>
 
 <body>
+  <!-- Tag for the array of search terms -->
+  <div id="buttonArray"></div>
 
+  <!-- Button and imput field to add a new search term -->
+  <input type="text" id="search">
+  <button id="submit">What are you feeling today</button>
+
+  <!-- Tag to display gifs at -->
+  <div id="emotion"></div>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+  <script src="assets/javascript/page.js"></script>
 </body>
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+</html>
