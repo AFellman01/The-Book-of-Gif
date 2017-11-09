@@ -1,19 +1,24 @@
+/*why not red?*/
+
 body {
 
   background-color: red;
   font-family: fantasy;
 }
 
+/*it won't do what I want and that's very frustrating.*/
 #emotion {
 
-/*display:inline-flex;*/
+display:inline-flex;
 width: 100%;
 height: 100%;
 margin: 0 auto;
 }
 
+/*Well, at least the images are the right size.*/
+
 img{
 
-height: 200px;
-width: 200px;
+height: 100px;
+width: 100px;
 }
