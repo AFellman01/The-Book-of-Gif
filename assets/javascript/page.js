@@ -13,9 +13,10 @@ function GetEmote() {
     url: queryURL,
     method: "GET"
   }).done(function(response) {
-   response.data.forEach(function(gif) {
+     response.data.forEach(function(gif) {
       var still_image = gif.images.downsized_still.url;
       var animated_image = gif.images.downsized.url;
+      var rating = gif.rating;
 
       var div = $('<div class="gif">');
 
@@ -24,8 +25,8 @@ function GetEmote() {
 
 // This sends the still images to the html.
       div.html(
-        '<img src="' + still_image + '">'
-        // '<p>' + gif.rating + '</p>'
+        '<img src="' + still_image + '">' + 
+        '<p>' + rating + '</p>'
       );
 
       $('#emotion').prepend(div);
