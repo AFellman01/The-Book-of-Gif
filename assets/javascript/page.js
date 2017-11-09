@@ -7,7 +7,8 @@ function GetEmote() {
 
   $('#emotion').empty();
   // Constructing a queryURL from custom API key
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + emotion_name + "&api_key=k6c4HJj3Kj6eL5PIOjffGv83ZHtX1xji&limit=25&=PG-13";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + emotion_name + "&api_key=k6c4HJj3Kj6eL5PIOjffGv83ZHtX1xji&limit=5";
+
   $.ajax({
     url: queryURL,
     method: "GET"
