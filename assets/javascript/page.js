@@ -1,5 +1,5 @@
 // Default array declared
-var emote = ['angry', 'sad', 'love', 'happy', 'monkey'];
+var emote = ['angry', 'sad', 'love', 'happy', 'monkey with computer', 'loki'];
 
 
 function GetEmote() {
@@ -19,11 +19,16 @@ function GetEmote() {
 
       var div = $('<div class="gif">');
 
+      // var rating = results[i].rating;
+      //   var p = $("<p>").text("Rating: " + rating);
+
       div.html(
         '<img src="' + still_image + '">'
+        // '<p>' + gif.rating + '</p>'
       );
 
       $('#emotion').prepend(div);
+      // $('#emotion').prepend(rating)
 
       div.find('img').mouseover(function() {
         $(this).attr('src', animated_image);
